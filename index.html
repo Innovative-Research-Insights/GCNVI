@@ -60,8 +60,8 @@ function ramp(t){t=Math.max(0,Math.min(1,t));const n=RG.length-1,i=Math.min(Math
   const a=RG[i].match(/\w\w/g).map(h=>parseInt(h,16)),b=RG[i+1].match(/\w\w/g).map(h=>parseInt(h,16));
   return '#'+a.map((v,k)=>Math.round(v+(b[k]-v)*f).toString(16).padStart(2,'0')).join('');}
 const map=L.map('map',{zoomControl:true}).setView([36.08,-79.83],11);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
-  {attribution:'&copy; OpenStreetMap contributors &copy; CARTO',maxZoom:18}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+  {attribution:'Basemap &copy; Esri, HERE, Garmin, OpenStreetMap contributors',maxZoom:16}).addTo(map);
 let LAYERS=[],geo=null,active='score';
 Promise.all([fetch('data/gcnvi_blockgroups.geojson').then(r=>r.json()),
              fetch('data/layers.json').then(r=>r.json())]).then(([gj,meta])=>{
