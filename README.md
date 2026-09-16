@@ -6,7 +6,7 @@ A block-group-level measure of neighborhood conditions for all 338 block groups 
 
 ## Interactive map
 
-The repository's GitHub Pages site serves an interactive map of the index: the composite score and five-category classification, with switchable layers for each of the ten components, red-to-green with green always the direction of greater vitality, priority tracts outlined, and a full block-group profile on click.
+The repository's GitHub Pages site serves an interactive map of the index: the composite score and five-category classification, with switchable layers for each of the ten components, red-to-green with green always the direction of greater vitality, pilot tracts outlined, and a full block-group profile on click.
 
 Once Pages is enabled (Settings > Pages > deploy from branch, root), the map is at: `https://<username>.github.io/<repo-name>/`
 
@@ -14,7 +14,7 @@ Once Pages is enabled (Settings > Pages > deploy from branch, root), the map is 
 
 | Document | File |
 |---|---|
-| Final report (2026) | [docs/GCNVI_Final_Report_2026.pdf](docs/GCNVI_Final_Report_2026.pdf) |
+| Final report (2026) | [docs/GCNVI_FinalReport_DRAFT_Master_Doc_REVISED_15Sep2026_sills.pdf](docs/GCNVI_FinalReport_DRAFT_Master_Doc_REVISED_15Sep2026_sills.pdf) |
 | Atlas of Neighborhood Conditions (213 plates + index) | [docs/IRI_Guilford_County_Neighborhood_Atlas_2026.pdf](docs/IRI_Guilford_County_Neighborhood_Atlas_2026.pdf) |
 | Concentrated Disadvantage and the Geography of Opportunity (framing) | [docs/Concentrated_Disadvantage_Framing_2026.pdf](docs/Concentrated_Disadvantage_Framing_2026.pdf) |
 | Neighborhood Indicators and Indices: Literature Review | [docs/Neighborhood_Indicators_LitReview_2026.pdf](docs/Neighborhood_Indicators_LitReview_2026.pdf) |
