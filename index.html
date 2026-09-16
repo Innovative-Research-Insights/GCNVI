@@ -41,14 +41,14 @@ html,body{margin:0;height:100%;font-family:Arial,Helvetica,sans-serif;}
   <div class="eyebrow">INNOVATIVE RESEARCH INSIGHTS · GUILFORD COUNTY DATA ATLAS</div>
   <h1>Guilford County Neighborhood Vitality Index</h1>
   <div class="sub">338 block groups (2020 census frame). Green = greater vitality on every layer.
-  Black outlines mark the nine Coalition priority tracts. Click any block group for its full profile.</div>
+  Black outlines mark the nine pilot tracts (proof-of-concept validation geography). Click any block group for its full profile.</div>
 </div>
 <div class="panel" id="layers"><h2>Layer</h2><div id="layerlist"></div></div>
 <div class="panel" id="legend"></div>
 <div class="panel" id="foot">
   Sponsored by Jeff Thigpen, Guilford County Register of Deeds, and Shaunne Thomas, Director,
   Guilford County Small Business Entrepreneurship Department ·
-  <a href="docs/GCNVI_Final_Report_2026.pdf">Final report</a> ·
+  <a href="docs/GCNVI_FinalReport_DRAFT_Master_Doc_REVISED_15Sep2026_sills.pdf">Final report</a> ·
   <a href="docs/IRI_Guilford_County_Neighborhood_Atlas_2026.pdf">Atlas</a> ·
   Stephen J. Sills, Ph.D., Innovative Research Insights, LLC, Winston-Salem, NC
 </div>
@@ -89,7 +89,7 @@ Promise.all([fetch('data/gcnvi_blockgroups.geojson').then(r=>r.json()),
     const p=f.properties;
     let rows=LAYERS.slice(2).map(m=>{
       let v=p[m.key];return `${m.label.split(' (')[0]}: <b>${v===null?'suppressed':v.toLocaleString()}</b>`;}).join('<br>');
-    l.bindPopup(`<div class="pop"><b>Tract ${p.tract} · Block group ${p.bg}</b>${p.pri? ' · <span style="color:#8A6E2F;font-weight:bold">PRIORITY TRACT</span>':''}<br>`+
+    l.bindPopup(`<div class="pop"><b>Tract ${p.tract} · Block group ${p.bg}</b>${p.pri? ' · <span style="color:#8A6E2F;font-weight:bold">PILOT TRACT</span>':''}<br>`+
       `Population: <b>${(p.pop||0).toLocaleString()}</b><br>`+
       `Composite score: <b>${p.score===null?'not scored':p.score}</b> · <span class="cat">${p.cat||''}</span><hr style="border:none;border-top:1px solid #E5E5E5">${rows}</div>`,
       {maxWidth:330});
