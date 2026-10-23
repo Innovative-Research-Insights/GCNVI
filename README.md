@@ -8,7 +8,7 @@ A block-group-level measure of neighborhood conditions for all 338 block groups 
 
 The repository's GitHub Pages site serves an interactive map of the index: the composite score and five-category classification, with switchable layers for each of the ten components, red-to-green with green always the direction of greater vitality, pilot tracts outlined, and a full block-group profile on click.
 
-Once Pages is enabled (Settings > Pages > deploy from branch, root), the map is at: `https://<username>.github.io/<repo-name>/`
+Once Pages is enabled (Settings > Pages > deploy from branch, root), the map is at: `(https://innovative-research-insights.github.io/GCNVI/)`
 
 ## Documents
 
